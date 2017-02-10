@@ -47,7 +47,7 @@
   \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';__webpack_require__(/*! babel-polyfill */ 1);var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 329);var _reactDom=__webpack_require__(/*! react-dom */ 384);var _routes=__webpack_require__(/*! ./routes */ 530);var _routes2=_interopRequireDefault(_routes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_reactDom.render)(_react2.default.createElement(_reactRouter.Router,{routes:_routes2.default,history:_reactRouter.browserHistory}),document.getElementById('root-container'));//browserHistory keeps a log of the users history path and keeps it attached to the react router
+	'use strict';__webpack_require__(/*! babel-polyfill */ 1);var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 329);var _reactDom=__webpack_require__(/*! react-dom */ 384);var _routes=__webpack_require__(/*! ./components/routes */ 532);var _routes2=_interopRequireDefault(_routes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_reactDom.render)(_react2.default.createElement(_reactRouter.Router,{routes:_routes2.default,history:_reactRouter.browserHistory}),document.getElementById('root-container'));//browserHistory keeps a log of the users history path and keeps it attached to the react router
 
 /***/ },
 /* 1 */
@@ -11719,22 +11719,51 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 295)))
 
 /***/ },
-/* 530 */
-/*!***********************!*\
-  !*** ./src/routes.js ***!
-  \***********************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 329);var _App=__webpack_require__(/*! ./components/App.jsx */ 531);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default});
-
-/***/ },
+/* 530 */,
 /* 531 */
 /*!********************************!*\
   !*** ./src/components/App.jsx ***!
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);return _possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));}_createClass(App,[{key:'render',value:function render(){return _react2.default.createElement('div',null,'Hey There');}}]);return App;}(_react.Component);exports.default=App;
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _App=__webpack_require__(/*! ./App.css */ 535);var _App2=_interopRequireDefault(_App);var _Footer=__webpack_require__(/*! ./Footer.jsx */ 533);var _Footer2=_interopRequireDefault(_Footer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);return _possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).call(this));}_createClass(App,[{key:'render',value:function render(){return _react2.default.createElement('div',null,_react2.default.createElement('h1',null,'Hey There'),_react2.default.createElement(_Footer2.default,null));}}]);return App;}(_react.Component);exports.default=App;
+
+/***/ },
+/* 532 */
+/*!**********************************!*\
+  !*** ./src/components/routes.js ***!
+  \**********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _reactRouter=__webpack_require__(/*! react-router */ 329);var _App=__webpack_require__(/*! ./App.jsx */ 531);var _App2=_interopRequireDefault(_App);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=_react2.default.createElement(_reactRouter.Route,{path:'/',component:_App2.default});
+
+/***/ },
+/* 533 */
+/*!***********************************!*\
+  !*** ./src/components/Footer.jsx ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';Object.defineProperty(exports,"__esModule",{value:true});var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=__webpack_require__(/*! react */ 299);var _react2=_interopRequireDefault(_react);var _Footer=__webpack_require__(/*! ./Footer.css */ 534);var _Footer2=_interopRequireDefault(_Footer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Footer=function(_Component){_inherits(Footer,_Component);function Footer(){_classCallCheck(this,Footer);return _possibleConstructorReturn(this,(Footer.__proto__||Object.getPrototypeOf(Footer)).apply(this,arguments));}_createClass(Footer,[{key:'render',value:function render(){return _react2.default.createElement('div',{className:_Footer2.default['footer']},'Fueled with Intensity by eXtremeC0dr$');}}]);return Footer;}(_react.Component);exports.default=Footer;
+
+/***/ },
+/* 534 */
+/*!***********************************!*\
+  !*** ./src/components/Footer.css ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"footer":"Footer__footer___31A1H"};
+
+/***/ },
+/* 535 */
+/*!********************************!*\
+  !*** ./src/components/App.css ***!
+  \********************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

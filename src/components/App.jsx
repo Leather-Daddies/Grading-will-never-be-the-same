@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styles from './App.css'
+import Footer from './Footer.jsx'
 
 export default class App extends Component {
   constructor(){
@@ -9,7 +11,9 @@ export default class App extends Component {
   render(){
     return (
       <div>
-        Hey There
+        <h1>Hey There</h1>
+
+        <Footer />
       </div>
     )
   }
