@@ -1,7 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router';
-import App from '../components/App.jsx'
+import { Route, indexRoute } from 'react-router';
+import App from './components/App.jsx'
 
 module.exports = (
-    <Route path='/' components={App}/>
+    <Route path='/' component={App} >
+      {/*indexRoute dictates the default component rendered at the root path*/}
+    </Route>
   )
